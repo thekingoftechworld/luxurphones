@@ -3,73 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPhone Store | Exclusive Offers</title>
+    <title>TechGadgets - Premium Smartphones</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header with offer countdown -->
     <header>
-        <div class="logo">
-            <i class="fab fa-apple"></i>
-            <span>iPhone Store</span>
+        <div class="offer-banner">
+            <p>Offer will expire in just <span id="countdown">2:00:00</span></p>
         </div>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li>
-                    <a href="#" class="cart-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count">0</span>
-                    </a>
-                </li>
+            <div class="logo">TechGadgets</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="cart-icon">
+                <span>🛒</span>
+                <span id="cart-count">0</span>
+            </div>
         </nav>
     </header>
 
-    <!-- Offer Banner -->
-    <div class="offer-banner">
-        <i class="fas fa-bolt"></i> Offer will expire in just 2 hours! <i class="fas fa-bolt"></i>
-    </div>
-
     <!-- Hero Section -->
-    <section class="hero">
-        <h1>Latest iPhone Models</h1>
-        <p>Discover the incredible features of the newest iPhones with exclusive limited-time offers.</p>
-        <a href="#" class="cta-button">Shop Now</a>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Latest Smartphones</h1>
+            <p>Discover our premium collection of cutting-edge smartphones</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
     </section>
 
     <!-- Products Section -->
-    <section class="products-container">
-        <h2 class="section-title">Our Products</h2>
-        <div class="products-grid" id="products-grid">
-            <!-- Product cards will be generated here -->
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- Space to insert your image -->
+                    <img src="product1.jpg" alt="Smartphone Model X" onerror="this.style.display='none'">
+                </div>
+                <div class="product-info">
+                    <h3>Smartphone Model X</h3>
+                    <p class="product-description">6.7" Display, 128GB Storage, 5G Connectivity</p>
+                    <p class="product-price">$699.99</p>
+                    <div class="product-buttons">
+                        <button class="buy-now">Buy Now</button>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- Space to insert your image -->
+                    <img src="product2.jpg" alt="Smartphone Model Y" onerror="this.style.display='none'">
+                </div>
+                <div class="product-info">
+                    <h3>Smartphone Model Y</h3>
+                    <p class="product-description">6.5" Display, 256GB Storage, Advanced Camera</p>
+                    <p class="product-price">$799.99</p>
+                    <div class="product-buttons">
+                        <button class="buy-now">Buy Now</button>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- Space to insert your image -->
+                    <img src="product3.jpg" alt="Smartphone Model Z" onerror="this.style.display='none'">
+                </div>
+                <div class="product-info">
+                    <h3>Smartphone Model Z</h3>
+                    <p class="product-description">6.9" Display, 512GB Storage, Premium Edition</p>
+                    <p class="product-price">$999.99</p>
+                    <div class="product-buttons">
+                        <button class="buy-now">Buy Now</button>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- Space to insert your image -->
+                    <img src="product4.jpg" alt="Smartphone Model A" onerror="this.style.display='none'">
+                </div>
+                <div class="product-info">
+                    <h3>Smartphone Model A</h3>
+                    <p class="product-description">6.1" Display, 64GB Storage, Budget Friendly</p>
+                    <p class="product-price">$399.99</p>
+                    <div class="product-buttons">
+                        <button class="buy-now">Buy Now</button>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="loader" id="loader">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>Why Choose Us</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Free Shipping</h3>
+                <p>We offer free shipping on all orders over $200</p>
+            </div>
+            <div class="feature">
+                <h3>30-Day Returns</h3>
+                <p>Not satisfied? Return within 30 days for a full refund</p>
+            </div>
+            <div class="feature">
+                <h3>24/7 Support</h3>
+                <p>Our customer support team is always ready to help</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Email: info@techgadgets.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Address: 123 Tech Street, Silicon Valley, CA</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-logo">iPhone Store</div>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Shipping Information</a>
-                <a href="#">Returns & Refunds</a>
-                <a href="#">Contact Us</a>
-            </div>
-            <div class="copyright">© 2023 iPhone Store. All rights reserved.</div>
-        </div>
+        <p>&copy; 2023 TechGadgets. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
